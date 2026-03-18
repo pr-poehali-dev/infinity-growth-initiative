@@ -77,9 +77,12 @@ export function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
       >
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
-          Brush Through Worlds: <em className="italic">from Teyvat</em> to Anime Universes.
-        </h1>
+        <div className="flex flex-col items-center gap-4">
+          <p className="text-sm uppercase tracking-widest text-foreground/70 mix-blend-difference">VERY CHERRY</p>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
+            Brush Through Worlds: <em className="italic">from Teyvat</em> to Anime Universes.
+          </h1>
+        </div>
       </motion.div>
 
       <motion.div
