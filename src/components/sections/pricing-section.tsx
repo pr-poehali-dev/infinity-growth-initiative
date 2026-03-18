@@ -3,18 +3,18 @@ import { Check } from "lucide-react"
 
 const plans = [
   {
-    name: "Старт",
-    price: "1 200",
-    period: " руб/мес",
-    description: "Для личного портфолио",
-    features: ["5 страниц", "Свой домен", "Базовая аналитика", "Поддержка по email"],
+    name: "Этюд",
+    price: "8 000",
+    period: " ₽",
+    description: "Небольшой формат, акварель или графика",
+    features: ["Формат до 30×40 см", "Акварель / графика / гуашь", "Срок 2–3 недели", "Доставка по России", "Фото процесса"],
   },
   {
-    name: "Про",
-    price: "2 900",
-    period: " руб/мес",
-    description: "Для растущих авторов",
-    features: ["Безлимит страниц", "Приоритет поддержки", "Расширенная аналитика", "Свой брендинг", "Работа в команде"],
+    name: "Полотно",
+    price: "25 000",
+    period: " ₽",
+    description: "Большая авторская работа",
+    features: ["Формат от 60×80 см", "Масло / акрил на холсте", "Срок 4–6 недель", "Доставка по России", "Фото и видео процесса", "Сертификат подлинности"],
     popular: true,
   },
 ]
@@ -29,8 +29,8 @@ export function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Простые и понятные цены</h2>
-          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Начните бесплатно, платите когда готовы.</p>
+          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Заказать картину</h2>
+          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Каждая работа создаётся лично для вас — с душой и вниманием к деталям.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -75,7 +75,7 @@ export function PricingSection() {
                     : "bg-secondary text-foreground hover:bg-accent/30"
                 }`}
               >
-                Начать
+                Обсудить заказ
               </button>
             </motion.div>
           ))}

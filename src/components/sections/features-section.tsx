@@ -86,11 +86,11 @@ export function FeaturesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Возможности
+          Обо мне
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Typography Card */}
+          {/* Style Card */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -105,12 +105,12 @@ export function FeaturesSection() {
               <TypeTester />
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Типографика</h3>
-              <p className="text-muted-foreground text-sm mt-1">Красивые шрифты, которые идеально масштабируются.</p>
+              <h3 className="font-serif text-xl text-foreground">Авторский стиль</h3>
+              <p className="text-muted-foreground text-sm mt-1">Узнаваемый почерк — от акварели до масла.</p>
             </div>
           </motion.div>
 
-          {/* Layouts Card */}
+          {/* Series Card */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -125,12 +125,12 @@ export function FeaturesSection() {
               <LayoutAnimation />
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Макеты</h3>
-              <p className="text-muted-foreground text-sm mt-1">Гибкие сетки, которые адаптируются под контент.</p>
+              <h3 className="font-serif text-xl text-foreground">Серии работ</h3>
+              <p className="text-muted-foreground text-sm mt-1">Тематические коллекции, объединённые идеей и настроением.</p>
             </div>
           </motion.div>
 
-          {/* Speed Card */}
+          {/* Commission Card */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -145,8 +145,8 @@ export function FeaturesSection() {
               <SpeedIndicator />
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Скорость</h3>
-              <p className="text-muted-foreground text-sm mt-1">Молниеносная загрузка страниц для ваших гостей.</p>
+              <h3 className="font-serif text-xl text-foreground">Заказные работы</h3>
+              <p className="text-muted-foreground text-sm mt-1">Создаю картины под запрос — портреты, пейзажи, абстракция.</p>
             </div>
           </motion.div>
         </div>
