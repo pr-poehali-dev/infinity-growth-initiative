@@ -6,32 +6,32 @@
 
 @layer base {
   :root {
-    /* Folio Lilac & Ink Theme */
-    --background: 270 20% 99%;
-    --foreground: 270 63% 6%;
-    --surface: 270 20% 96%;
-    --ink: 270 63% 6%;
-    --iris: 263 70% 42%;
-    --lilac: 270 89% 85%;
-    --lime: 82 85% 80%;
-    --muted-foreground: 270 8% 43%;
+    /* Very Cherry — холодная вишня */
+    --background: 330 30% 98%;
+    --foreground: 320 40% 12%;
+    --surface: 330 25% 95%;
+    --ink: 320 40% 12%;
+    --iris: 335 55% 38%;
+    --lilac: 330 60% 88%;
+    --lime: 335 60% 88%;
+    --muted-foreground: 320 15% 48%;
 
-    --card: 270 20% 96%;
-    --card-foreground: 270 63% 6%;
-    --popover: 270 20% 99%;
-    --popover-foreground: 270 63% 6%;
-    --primary: 263 70% 42%;
-    --primary-foreground: 270 20% 99%;
-    --secondary: 270 20% 96%;
-    --secondary-foreground: 270 63% 6%;
-    --muted: 270 20% 96%;
-    --accent: 270 89% 85%;
-    --accent-foreground: 270 63% 6%;
+    --card: 330 25% 95%;
+    --card-foreground: 320 40% 12%;
+    --popover: 330 30% 98%;
+    --popover-foreground: 320 40% 12%;
+    --primary: 335 55% 38%;
+    --primary-foreground: 330 30% 98%;
+    --secondary: 330 25% 95%;
+    --secondary-foreground: 320 40% 12%;
+    --muted: 330 25% 95%;
+    --accent: 330 60% 88%;
+    --accent-foreground: 320 40% 12%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 270 15% 92%;
-    --input: 270 15% 92%;
-    --ring: 263 70% 42%;
+    --border: 330 20% 90%;
+    --input: 330 20% 90%;
+    --ring: 335 55% 38%;
 
     --radius: 0.75rem;
 
@@ -83,7 +83,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Inter", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
   }
 }
 
