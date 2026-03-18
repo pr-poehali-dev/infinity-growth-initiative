@@ -24,7 +24,7 @@ export function HeroSection() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background px-6 py-24"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-24 bg-purple-200 mx-0 rounded-0"
     >
       {/* Stacked images */}
       <div className="relative flex items-center justify-center">
@@ -78,7 +78,7 @@ export function HeroSection() {
         transition={{ duration: 1, delay: 0.8 }}
       >
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
-          Живопись, <em className="italic">рождённая</em> душой.
+          Brush Through Worlds: <em className="italic">from Teyvat</em> to Anime Universes.
         </h1>
       </motion.div>
 

@@ -18,7 +18,7 @@ export function FooterSection() {
     <footer className="relative bg-background px-6 py-24 overflow-hidden">
       {/* Gradient blob */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-tr from-purple-300 via-purple-200 to-lime-200 opacity-40 blur-3xl rounded-full" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-rose-300 via-pink-200 to-rose-100 opacity-50 blur-3xl rounded-full" />
       </div>
 
       <div className="relative max-w-6xl mx-auto">
@@ -31,7 +31,7 @@ export function FooterSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Портфолио.
+              VERY CHERRY.
             </motion.h2>
 
             <nav className="flex flex-wrap gap-6 mt-8">
