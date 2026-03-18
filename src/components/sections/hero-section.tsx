@@ -77,9 +77,12 @@ export function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
       >
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-rose-900">
-          Brush Through Worlds: <em className="italic text-rose-600">from Teyvat</em> to Anime Universes.
-        </h1>
+        <div className="flex flex-col items-end gap-3">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-rose-900">
+            Brush Through Worlds: <em className="italic text-rose-600">from Teyvat</em> to Anime Universes.
+          </h1>
+          <p className="font-serif italic text-rose-400 text-lg md:text-xl tracking-wide">— Very Cherry</p>
+        </div>
       </motion.div>
 
       <motion.div
