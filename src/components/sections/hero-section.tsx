@@ -24,7 +24,7 @@ export function HeroSection() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background px-6 py-24"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-24 bg-purple-200 mx-0 rounded-0"
     >
       {/* Stacked images */}
       <div className="relative flex items-center justify-center">
