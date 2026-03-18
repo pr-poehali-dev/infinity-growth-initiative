@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 
 const images = [
   "/minimal-architecture-portfolio-with-clean-lines.jpg",
-  "/fashion-photography-editorial-black-and-white.jpg",
+  "https://cdn.poehali.dev/projects/6dc03441-c152-42c8-a40f-e0393d02aa14/bucket/cc1b9854-9a7d-4ef2-8b8c-856f6da2e0cd.jpg",
   "/modern-ui-design-portfolio-mockup.jpg",
 ]
 
@@ -24,7 +24,7 @@ export function HeroSection() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-24 bg-rose-50 mx-0 rounded-0"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-24 bg-[#0a0a0a] mx-0 rounded-0"
     >
       {/* Stacked images */}
       <div className="relative flex items-center justify-center">
@@ -78,10 +78,10 @@ export function HeroSection() {
         transition={{ duration: 1, delay: 0.8 }}
       >
         <div className="flex flex-col items-end gap-3">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-rose-900">
-            Brush Through Worlds: <em className="italic text-rose-600">from Teyvat</em> to Anime Universes.
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-rose-50">
+            Brush Through Worlds: <em className="italic text-rose-400">from Teyvat</em> to Anime Universes.
           </h1>
-          <p className="font-serif italic text-rose-400 text-lg md:text-xl tracking-wide">— Very Cherry</p>
+          <p className="font-serif italic text-rose-500 text-lg md:text-xl tracking-wide">— Very Cherry</p>
         </div>
       </motion.div>
 
@@ -92,7 +92,7 @@ export function HeroSection() {
         transition={{ delay: 1.5 }}
       >
         <motion.div
-          className="w-6 h-10 rounded-full border-2 border-foreground/30 flex items-start justify-center p-2"
+          className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-2"
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
         >
