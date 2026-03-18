@@ -24,10 +24,20 @@ export function HeroSection() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-24 bg-[#0a0a0a] mx-0 rounded-0"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-24 mx-0 rounded-0"
     >
+      {/* Fullscreen background */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://cdn.poehali.dev/projects/6dc03441-c152-42c8-a40f-e0393d02aa14/bucket/cc1b9854-9a7d-4ef2-8b8c-856f6da2e0cd.jpg"
+          alt="bg"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+      </div>
+
       {/* Stacked images */}
-      <div className="relative flex items-center justify-center">
+      <div className="relative flex items-center justify-center z-10">
         <motion.div
           className="absolute w-[280px] md:w-[320px] aspect-[3/4] rounded-xl overflow-hidden shadow-2xl"
           style={{ rotate: rotate1, x: x1, y, zIndex: 1 }}
