@@ -1,25 +1,8 @@
 import { useRef } from "react"
-import { motion, useScroll, useTransform } from "framer-motion"
-
-const images = [
-  "/minimal-architecture-portfolio-with-clean-lines.jpg",
-  "https://cdn.poehali.dev/projects/6dc03441-c152-42c8-a40f-e0393d02aa14/bucket/cc1b9854-9a7d-4ef2-8b8c-856f6da2e0cd.jpg",
-  "/modern-ui-design-portfolio-mockup.jpg",
-]
+import { motion } from "framer-motion"
 
 export function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null)
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"],
-  })
-
-  const rotate1 = useTransform(scrollYProgress, [0, 1], [0, -15])
-  const rotate2 = useTransform(scrollYProgress, [0, 1], [0, 0])
-  const rotate3 = useTransform(scrollYProgress, [0, 1], [0, 15])
-  const x1 = useTransform(scrollYProgress, [0, 1], [0, -200])
-  const x3 = useTransform(scrollYProgress, [0, 1], [0, 200])
-  const y = useTransform(scrollYProgress, [0, 1], [0, 100])
 
   return (
     <section
@@ -36,50 +19,7 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
-      {/* Stacked images */}
-      <div className="relative flex items-center justify-center z-10">
-        <motion.div
-          className="absolute w-[280px] md:w-[320px] aspect-[3/4] rounded-xl overflow-hidden shadow-2xl"
-          style={{ rotate: rotate1, x: x1, y, zIndex: 1 }}
-          initial={{ clipPath: "inset(100% 0 0 0)" }}
-          animate={{ clipPath: "inset(0 0 0 0)" }}
-          transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <img
-            src={images[0] || "/placeholder.svg"}
-            alt="Портфолио 1"
-            className="w-full h-full object-cover"
-          />
-        </motion.div>
 
-        <motion.div
-          className="relative w-[280px] md:w-[320px] aspect-[3/4] rounded-xl overflow-hidden shadow-2xl"
-          style={{ rotate: rotate2, y, zIndex: 2 }}
-          initial={{ clipPath: "inset(100% 0 0 0)" }}
-          animate={{ clipPath: "inset(0 0 0 0)" }}
-          transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <img
-            src={images[1] || "/placeholder.svg"}
-            alt="Портфолио 2"
-            className="w-full h-full object-cover"
-          />
-        </motion.div>
-
-        <motion.div
-          className="absolute w-[280px] md:w-[320px] aspect-[3/4] rounded-xl overflow-hidden shadow-2xl"
-          style={{ rotate: rotate3, x: x3, y, zIndex: 1 }}
-          initial={{ clipPath: "inset(100% 0 0 0)" }}
-          animate={{ clipPath: "inset(0 0 0 0)" }}
-          transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <img
-            src={images[2] || "/placeholder.svg"}
-            alt="Портфолио 3"
-            className="w-full h-full object-cover"
-          />
-        </motion.div>
-      </div>
 
       <motion.div
         className="absolute inset-0 flex items-center justify-center pointer-events-none z-10"
